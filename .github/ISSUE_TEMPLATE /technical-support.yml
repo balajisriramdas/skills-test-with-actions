@@ -1,0 +1,175 @@
+name: Training and Support Request
+description: Track training and support activities
+title: "[Activity Request] Title of the request"
+labels: [training, support]
+
+body:
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Type of Request
+      description: Select the type of request
+      options:
+        - Training/Workshop
+        - Technical Support
+    validations:
+      required: true
+
+  - type: dropdown
+    id: delivery_mode
+    attributes:
+      label: Mode of Delivery
+      description: Select the mode of delivery
+      options:
+        - Virtual (Online)
+        - Onsite (In-person)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: training_module
+    attributes:
+      label: Training Module
+      description: Select the training module
+      options:
+        - GitHub Copilot
+        - GitHub Overview
+        - GitHub Developer Workflow
+        - GitHub Actions
+        - GitHub Advanced Security
+        - GitHub Administration
+    validations:
+      required: true
+
+  - type: dropdown
+    id: product_area
+    attributes:
+      label: What product/area is this related to?
+      description: Select the relevant GitHub module
+      options:
+        - GHEC Initial Setup
+        - GitHub Copilot Enablement
+        - GitHub Copilot Queries
+        - GitHub Enterprise Server
+        - GHAS
+        - GH EMU
+    validations:
+      required: true
+
+  - type: input
+    id: activity_date
+    attributes:
+      label: Activity Date
+      description: Enter the activity date (DD-MMM-YYYY)
+      placeholder: DD-MMM-YYYY
+    validations:
+      required: true
+
+  - type: input
+    id: time
+    attributes:
+      label: Time
+      description: Enter the time of the activity
+      placeholder: HH:MM
+
+  - type: input
+    id: participants
+    attributes:
+      label: Number of Participants
+      description: Enter the number of participants
+
+  - type: input
+    id: copilot_licenses_activated
+    attributes:
+      label: Number of Copilot Licenses Activated
+      description: Enter the number of Copilot licenses activated (Enter NA if not applicable)
+      placeholder: NA
+
+  - type: input
+    id: copilot_seats_anticipated
+    attributes:
+      label: Number of Copilot Seats Anticipated
+      description: Enter the number of Copilot seats anticipated (Enter NA if not applicable)
+      placeholder: NA
+
+  - type: input
+    id: github_licenses
+    attributes:
+      label: Number of GitHub Licenses Customer Has
+      description: Enter the number of GitHub licenses the customer has
+
+  - type: dropdown
+    id: customer_name
+    attributes:
+      label: Customer Name
+      description: Select the customer name
+      options:
+        - TCS
+        - HCL
+        - Cognizant
+        - Infosys
+        - Wipro
+        - Tech Mahindra
+        - L&T
+    validations:
+      required: true
+
+  - type: input
+    id: customer_spoc_name
+    attributes:
+      label: Customer SPOC Name
+      description: Enter the name of the customer SPOC (Single Point of Contact)
+
+  - type: input
+    id: customer_email
+    attributes:
+      label: Customer Email ID
+      description: Enter the email ID of the customer SPOC
+
+  - type: input
+    id: customer_phone
+    attributes:
+      label: Customer Phone Number
+      description: Enter the phone number of the customer SPOC
+
+  - type: input
+    id: github_ae_name
+    attributes:
+      label: GitHub AE Name
+      description: Enter the name of the GitHub Account Executive
+
+  - type: input
+    id: github_ae_email
+    attributes:
+      label: GitHub AE Email ID
+      description: Enter the email ID of the GitHub Account Executive
+
+  - type: input
+    id: github_ae_phone
+    attributes:
+      label: GitHub AE Phone Number
+      description: Enter the phone number of the GitHub Account Executive
+
+  - type: input
+    id: microsoft_ae_name
+    attributes:
+      label: Microsoft AE Name
+      description: Enter the name of the Microsoft Account Executive
+
+  - type: input
+    id: microsoft_ae_email
+    attributes:
+      label: Microsoft AE Email ID
+      description: Enter the email ID of the Microsoft Account Executive
+
+  - type: input
+    id: microsoft_ae_phone
+    attributes:
+      label: Microsoft AE Phone Number
+      description: Enter the phone number of the Microsoft Account Executive
+
+  - type: textarea
+    id: additional_insights
+    attributes:
+      label: Additional Insights for Engagement
+      description: Provide any additional insights or details relevant to the engagement
